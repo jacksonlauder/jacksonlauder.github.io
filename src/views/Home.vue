@@ -1,14 +1,14 @@
 <template>
   <v-container fluid>
-    <v-card class="mb-10">
+    <!-- <v-card class="mb-10">
       <v-img
         dark
-        height="800"
+        height="500"
         :src="require('../assets/artwork_home.png')"
       ></v-img>
-    </v-card>
+    </v-card> -->
     <v-card>
-      <v-row>
+      <v-row class="ma-2">
         <v-col
           v-for="(icon, index) in icons"
           :key="index"
@@ -65,6 +65,15 @@ export default {
         icon: "https://img.icons8.com/plasticine/240/000000/bash.png",
       },
       {
+        icon: "https://img.icons8.com/color/240/000000/linux.png",
+      },
+      {
+        icon: "https://img.icons8.com/color/240/000000/mac-logo.png",
+      },
+      {
+        icon: "https://img.icons8.com/color/240/000000/xcode.png",
+      },
+      {
         icon: "https://img.icons8.com/fluent/240/000000/visual-studio-code-2019.png",
       },
       {
@@ -78,15 +87,6 @@ export default {
       },
       {
         icon: "https://img.icons8.com/color/240/000000/adobe-xd.png",
-      },
-      {
-        icon: "https://img.icons8.com/color/240/000000/mac-logo.png",
-      },
-      {
-        icon: "https://img.icons8.com/color/240/000000/xcode.png",
-      },
-      {
-        icon: "https://img.icons8.com/color/240/000000/linux.png",
       },
     ],
   }),
