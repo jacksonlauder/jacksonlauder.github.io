@@ -1,15 +1,13 @@
 <template>
-  <hello-world />
+  <v-parallax
+    src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+  ></v-parallax>
 </template>
 
 <script>
-import HelloWorld from "../components/HelloWorld";
-
 export default {
   name: "Home",
 
-  components: {
-    HelloWorld,
-  },
+  components: {},
 };
 </script>

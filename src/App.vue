@@ -1,36 +1,37 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+    <v-app-bar app color="blue-grey darken-3" flat tile>
+      <v-spacer></v-spacer>
+      <v-btn icon x-large>
+        <div class="d-flex align-center">
+          <v-img
+            alt="Jaxium Logo"
+            class="shrink"
+            contain
+            :src="require('./assets/logo (white).png')"
+            transition="scale-transition"
+            width="35"
+          />
+        </div>
+      </v-btn>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+      <v-btn text color="white" class="app-bar-links">
+        <span>Resume</span>
+      </v-btn>
+
+      <v-btn text color="white" class="app-bar-links">
+        <span>Projects</span>
+      </v-btn>
+
+      <v-btn icon x-large color="white" href="https://github.com/jacksonlauder" target="_blank">
+        <v-icon>mdi-github</v-icon>
+      </v-btn>
+
+      <v-btn icon x-large color="white" href="https://www.linkedin.com/in/jacksonlauder/" target="_blank">
+        <v-icon>mdi-linkedin</v-icon>
+      </v-btn>
 
       <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
     </v-app-bar>
 
     <v-main>
