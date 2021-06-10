@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <v-card class="mb-4">
+    <v-card class="mb-4" flat>
       <v-img :src="require('../assets/DSC_0302.png')" :aspect-ratio="16 / 9">
         <div class="d-flex glass-div justify-center mx-auto mt-1">
           <v-card-text>
@@ -26,10 +26,11 @@
       </v-img>
     </v-card>
 
-    <v-card class="mb-4">
+    <v-card flat>
       <v-img
         dark
         :src="require('../assets/artwork_home.png')"
+        max-height="646"
         :aspect-ratio="16 / 9"
       >
         <div class="d-flex glass-2-div justify-center ma-1">
