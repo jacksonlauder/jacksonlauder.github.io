@@ -11,7 +11,6 @@
         <v-btn
           dark
           depressed
-          large
           color="blue-grey darken-2"
           href="/Jackson_Lauder_Resume.pdf"
         >
