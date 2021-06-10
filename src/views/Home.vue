@@ -1,26 +1,16 @@
 <template>
   <v-container fluid>
-    <!-- <v-card class="mb-10">
-      <v-img
-        dark
-        height="500"
-        :src="require('../assets/artwork_home.png')"
-      ></v-img>
-    </v-card> -->
     <v-card class="mb-4">
-      <v-img
-        :src="require('../assets/DSC_0302.png')"
-        :aspect-ratio="16 / 9"
-        class="align-center"
-      >
-        <div class="intro-div">
+      <v-img :src="require('../assets/DSC_0302.png')" :aspect-ratio="16 / 9">
+        <div class="d-flex glass-div justify-center mx-auto mt-1">
           <v-card-text>
             <span
               class="white--text font-weight-thin text-center intro-text-hello"
             >
               Hey there, I'm Jackson
             </span>
-            <h1
+
+            <span
               class="
                 blue-grey--text
                 text--lighten-3
@@ -30,13 +20,49 @@
               "
             >
               Computer Scientist
-            </h1>
+            </span>
           </v-card-text>
         </div>
       </v-img>
     </v-card>
 
-    <v-card>
+    <v-card class="mb-4">
+      <v-img
+        dark
+        :src="require('../assets/artwork_home.png')"
+        :aspect-ratio="16 / 9"
+      >
+        <div class="d-flex glass-2-div justify-center ma-1">
+          <!-- <v-row>
+            <v-card-text>
+              <span
+                class="
+                  white--text
+                  font-weight-thin
+                  text-center
+                  intro-text-hello
+                "
+              >
+                What I'm good at:
+              </span>
+            </v-card-text>
+          </v-row> -->
+
+          <v-row class="ma-2">
+            <v-col
+              v-for="(icon, index) in icons"
+              :key="index"
+              cols="3"
+              class="d-flex child-flex justify-center"
+            >
+              <v-img :src="icon.icon" max-width="100"></v-img>
+            </v-col>
+          </v-row>
+        </div>
+      </v-img>
+    </v-card>
+
+    <!-- <v-card>
       <v-card-title class="justify-center mb-4">
         <h2>What I am good at:</h2>
       </v-card-title>
@@ -47,10 +73,10 @@
           cols="3"
           class="d-flex child-flex justify-center"
         >
-          <v-img :src="icon.icon" max-width="150"></v-img>
+          <v-img :src="icon.icon" max-width="100"></v-img>
         </v-col>
       </v-row>
-    </v-card>
+    </v-card> -->
   </v-container>
 </template>
 

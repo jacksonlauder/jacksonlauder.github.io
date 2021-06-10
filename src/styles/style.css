@@ -43,16 +43,15 @@ body,
   content: "\e900";
 }
 
-.intro-div {
+.glass-div {
   background: rgba(69, 90, 100, 0.15);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(6.5px);
   -webkit-backdrop-filter: blur(6.5px);
-  border-radius: 10px;
+  border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: fit-content;
-  padding: 3vh;
-  margin-left: 1vw;
+  padding: 2vh;
 }
 
 .intro-text-hello {
@@ -62,4 +61,15 @@ body,
 .intro-text-computer {
   font-size: 4.1vw;
   margin-top: 4vh;
+}
+
+.glass-2-div {
+  background: rgba(255, 255, 255, 0.445);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: fit-content;
+  padding: 2vh;
 }
