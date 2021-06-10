@@ -6,6 +6,17 @@ body,
   background-color: #eceff1;
 }
 
+.v-card__subtitle,
+.v-card__text {
+  line-height: unset;
+}
+
+.v-card__subtitle,
+.v-card__text,
+.v-card__title {
+  padding: 0.3em 1em !important;
+}
+
 .app-bar-links {
   text-transform: none;
   font-size: 0.975rem !important;
@@ -51,7 +62,6 @@ body,
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: fit-content;
-  padding: 2vh;
 }
 
 .intro-text-hello {
@@ -60,7 +70,6 @@ body,
 
 .intro-text-computer {
   font-size: 4.1vw;
-  margin-top: 4vh;
 }
 
 .glass-2-div {
