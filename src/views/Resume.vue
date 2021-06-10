@@ -1,13 +1,9 @@
 <template>
   <v-container fluid>
-    <v-card>
-      <v-card-title><h2>My Resume</h2></v-card-title>
-
-      <v-divider class="mx-4"></v-divider>
-
+    <v-card class="pa-6">
       <v-img :src="require('../assets/Resume Jun 2020.png')"></v-img>
 
-      <v-divider class="mx-4"></v-divider>
+      <v-divider class="mx-4 my-7"></v-divider>
 
       <v-card-actions>
         <v-spacer></v-spacer>
