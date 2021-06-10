@@ -7,7 +7,39 @@
         :src="require('../assets/artwork_home.png')"
       ></v-img>
     </v-card> -->
+    <v-card class="mb-4">
+      <v-img
+        :src="require('../assets/DSC_0302.png')"
+        :aspect-ratio="16 / 9"
+        class="align-center"
+      >
+        <div class="intro-div">
+          <v-card-text>
+            <span
+              class="white--text font-weight-thin text-center intro-text-hello"
+            >
+              Hey there, I'm Jackson
+            </span>
+            <h1
+              class="
+                blue-grey--text
+                text--lighten-3
+                font-weight-light
+                text-center
+                intro-text-computer
+              "
+            >
+              Computer Scientist
+            </h1>
+          </v-card-text>
+        </div>
+      </v-img>
+    </v-card>
+
     <v-card>
+      <v-card-title class="justify-center mb-4">
+        <h2>What I am good at:</h2>
+      </v-card-title>
       <v-row class="ma-2">
         <v-col
           v-for="(icon, index) in icons"

@@ -7,11 +7,11 @@
         <v-icon class="icon-logo"></v-icon>
       </v-btn>
 
-      <v-btn text plain class="app-bar-links" :ripple="false" to="/resume">
+      <v-btn text plain class="app-bar-links font-weight-regular" :ripple="false" to="/resume">
         <span>Resume</span>
       </v-btn>
 
-      <v-btn text plain class="app-bar-links" :ripple="false" to="/projects">
+      <v-btn text plain class="app-bar-links font-weight-regular" :ripple="false" to="/projects">
         <span>Projects</span>
       </v-btn>
 
