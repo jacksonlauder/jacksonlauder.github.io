@@ -41,6 +41,7 @@
               icon
               x-large
               color="blue-grey darken-2"
+              class="mr-3"
               :ripple="false"
               :href="project.link"
               target="_blank"
