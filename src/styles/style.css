@@ -27,7 +27,7 @@ body,
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-  speak: never;
+  /* speak: never; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -41,4 +41,8 @@ body,
 
 .icon-logo:before {
   content: "\e900";
+}
+
+.aa {
+  background: red !important;
 }

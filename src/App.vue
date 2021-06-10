@@ -1,16 +1,17 @@
 <template>
   <v-app>
-    <v-app-bar app color="blue-grey darken-3" flat tile>
+    <v-app-bar app dark color="blue-grey darken-3" flat tile>
       <v-spacer></v-spacer>
-      <v-btn icon x-large plain color="white" to="/home">
+
+      <v-btn icon x-large plain :ripple="false" to="/">
         <v-icon class="icon-logo"></v-icon>
       </v-btn>
 
-      <v-btn text color="white" class="app-bar-links" plain to="/resume">
+      <v-btn text plain class="app-bar-links" :ripple="false" to="/resume">
         <span>Resume</span>
       </v-btn>
 
-      <v-btn text color="white" class="app-bar-links" plain to="/projects">
+      <v-btn text plain class="app-bar-links" :ripple="false" to="/projects">
         <span>Projects</span>
       </v-btn>
 
@@ -18,7 +19,7 @@
         icon
         x-large
         plain
-        color="white"
+        :ripple="false"
         href="https://github.com/jacksonlauder"
         target="_blank"
       >
@@ -29,7 +30,7 @@
         icon
         x-large
         plain
-        color="white"
+        :ripple="false"
         href="https://www.linkedin.com/in/jacksonlauder/"
         target="_blank"
       >
