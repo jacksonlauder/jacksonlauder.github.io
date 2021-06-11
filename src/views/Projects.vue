@@ -106,7 +106,7 @@ export default {
           },
         ],
         about:
-          "My senior project for my degree. It is a small-scale social network built with MongoDB, expressJS, Vue.js + Vuetify, and Node.JS",
+          "I was tasked with refactoring this site. I refactored it by limiting server calls and filtering the connectors with jQuery.",
         link: "http://catalog.netiq.com/ncarest/displayCatalog",
       },
     ],
