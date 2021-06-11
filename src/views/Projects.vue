@@ -15,29 +15,30 @@
             ></v-card-title>
           </v-img> -->
 
-          <v-carousel cycle height="400" hide-delimiters :show-arrows="false">
+          <v-carousel height="400">
             <v-carousel-item
               v-for="(picture, i) in project.pictures"
               :key="i"
-              :src="require('../assets/' + picture.src)"
+              :src="require('../assets/projects-images/' + picture.src)"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.3)"
             ></v-carousel-item>
           </v-carousel>
 
-          <v-card-title class="justify-center mb-4">
-            <h2>{{ project.title }}</h2>
-          </v-card-title>
+          <v-card-text class="text-center my-4 mx-1 black--text">
+            <h1>{{ project.title }}</h1>
+          </v-card-text>
 
           <v-card-text class="text-center mb-7">
             <h3>{{ project.about }}</h3>
           </v-card-text>
 
-          <v-divider class="mx-4"></v-divider>
+          <v-divider class="mx-4 mb-2"></v-divider>
 
           <v-card-actions>
             <v-spacer></v-spacer>
 
             <v-btn
+              v-if="project.link"
               icon
               x-large
               color="blue-grey darken-2"
@@ -50,11 +51,12 @@
             </v-btn>
 
             <v-btn
+              v-if="project.codeLink"
               icon
               x-large
               color="blue-grey darken-2"
               :ripple="false"
-              :href="project.githubLink"
+              :href="project.codeLink"
               target="_blank"
             >
               <v-icon>mdi-code-json</v-icon>
@@ -76,22 +78,36 @@ export default {
         title: "Jaxium Social Network",
         pictures: [
           {
-            src: "jaxium-site-home.png",
+            src: "jaxium/jaxium-site-home.png",
           },
           {
-            src: "jaxium-home.png",
+            src: "jaxium/jaxium-home.png",
           },
           {
-            src: "jaxium-profile.png",
+            src: "jaxium/jaxium-profile.png",
           },
           {
-            src: "jaxium-messages.png",
+            src: "jaxium/jaxium-messages.png",
           },
         ],
         about:
-          "A small-scale social network built with MongoDB, expressJS, Vue.js + Vuetify, and Node.JS",
+          "My senior project for my degree. It is a small-scale social network built with MongoDB, expressJS, Vue.js + Vuetify, and Node.JS",
         link: "http://ec2-52-53-58-204.us-west-1.compute.amazonaws.com:3000/",
-        githubLink: "https://github.com/jacksonlauder/jaxium-social-network",
+        codeLink: "https://github.com/jacksonlauder/jaxium-social-network",
+      },
+      {
+        title: "Application Connector Catalog",
+        pictures: [
+          {
+            src: "connector-catalog/connector-catalog.png",
+          },
+          {
+            src: "connector-catalog/connector-catalog-2.png",
+          },
+        ],
+        about:
+          "My senior project for my degree. It is a small-scale social network built with MongoDB, expressJS, Vue.js + Vuetify, and Node.JS",
+        link: "http://catalog.netiq.com/ncarest/displayCatalog",
       },
     ],
   }),
