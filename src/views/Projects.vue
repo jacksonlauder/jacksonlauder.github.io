@@ -3,18 +3,6 @@
     <v-row dense justify="center">
       <v-col v-for="project in projects" :key="project.title">
         <v-card class="mx-auto mt-5 pa-2" max-width="800">
-          <!-- <v-img
-            :src="require('../assets/' + project.filename)"
-            class="white--text align-end"
-            gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-            height="350px"
-          >
-            <v-card-title
-              v-text="project.title"
-              class="justify-center"
-            ></v-card-title>
-          </v-img> -->
-
           <v-carousel height="400">
             <v-carousel-item
               v-for="(picture, i) in project.pictures"

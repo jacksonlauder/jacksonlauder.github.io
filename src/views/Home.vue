@@ -62,22 +62,6 @@
         </div>
       </v-img>
     </v-card>
-
-    <!-- <v-card>
-      <v-card-title class="justify-center mb-4">
-        <h2>What I am good at:</h2>
-      </v-card-title>
-      <v-row class="ma-2">
-        <v-col
-          v-for="(icon, index) in icons"
-          :key="index"
-          cols="3"
-          class="d-flex child-flex justify-center"
-        >
-          <v-img :src="icon.icon" max-width="100"></v-img>
-        </v-col>
-      </v-row>
-    </v-card> -->
   </v-container>
 </template>
 
