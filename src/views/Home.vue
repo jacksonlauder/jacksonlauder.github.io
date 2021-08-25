@@ -83,21 +83,6 @@
         style="border-radius: 10px"
       >
         <div class="d-flex glass-2-div justify-center ma-1">
-          <!-- <v-row>
-            <v-card-text>
-              <span
-                class="
-                  white--text
-                  font-weight-thin
-                  text-center
-                  intro-text-hello
-                "
-              >
-                What I'm good at:
-              </span>
-            </v-card-text>
-          </v-row> -->
-
           <v-row class="ma-2">
             <v-col
               v-for="(icon, index) in icons"
@@ -105,7 +90,7 @@
               cols="3"
               class="d-flex justify-center"
             >
-              <v-img :src="icon.icon" max-width="100"></v-img>
+              <v-img :src="icon.icon" :max-width="width"></v-img>
             </v-col>
           </v-row>
         </div>
@@ -182,5 +167,22 @@ export default {
       },
     ],
   }),
+  computed: {
+    // eslint-disable-next-line vue/return-in-computed-property
+    width() {
+      switch (this.$vuetify.breakpoint.name) {
+        case "xs":
+          return 75;
+        case "sm":
+          return 75;
+        case "md":
+          return 100;
+        case "lg":
+          return 100;
+        case "xl":
+          return 100;
+      }
+    },
+  },
 };
 </script>
