@@ -1,7 +1,16 @@
 <template>
   <v-container fluid>
     <v-card class="pa-8 mx-auto" max-width="65rem">
-      <v-img :src="require('../assets/Resume Jun 2020.png')"></v-img>
+      <v-img :src="require('../assets/Resume Jun 2020.png')">
+        <template v-slot:placeholder>
+          <v-skeleton-loader
+            class="mx-auto"
+            width="100%"
+            height="100%"
+            type="image"
+          ></v-skeleton-loader>
+          </template
+      ></v-img>
 
       <v-divider class="mx-1 my-7"></v-divider>
 

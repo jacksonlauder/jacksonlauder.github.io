@@ -3,7 +3,7 @@ body,
 .v-application,
 .v-application--wrap {
   /* min-height: -webkit-fill-available !important; */
-  background-color: #eceff1;
+  background-color: #CFD8DC;
 }
 
 .v-card__subtitle,
@@ -55,13 +55,21 @@ body,
 }
 
 .glass-div {
-  background: rgba(69, 90, 100, 0.15);
+  background: rgba(236, 239, 241, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(6.5px);
-  -webkit-backdrop-filter: blur(6.5px);
-  border-radius: 3px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  width: fit-content;
+}
+
+.glass-2-div {
+  background: rgba(236, 239, 241, 0.50);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .intro-text-hello {
@@ -72,13 +80,6 @@ body,
   font-size: 4.1vw;
 }
 
-.glass-2-div {
-  background: rgba(255, 255, 255, 0.445);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(6.5px);
-  -webkit-backdrop-filter: blur(6.5px);
-  border-radius: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  width: fit-content;
-  height: fit-content;
+.glass-card {
+  color: rgba(255, 255, 255, 0.445);
 }

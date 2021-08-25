@@ -1,6 +1,41 @@
 <template>
   <v-container fluid>
-    <v-card class="mb-4" flat>
+    <v-sheet color="blue-grey lighten-4" height="90vh" class="d-flex">
+      <div class="glass-div ma-auto">
+        <p
+          class="
+            blue-grey--text
+            text--darken-1 text-h3
+            font-weight-regular
+            text-center
+            mt-4
+          "
+        >
+          Hey there, I'm
+        </p>
+
+        <p
+          class="
+            blue-grey--text
+            text--darken-2 text-h2
+            font-weight-medium
+            text-center
+          "
+        >
+          Jackson Lauder
+        </p>
+
+        <p class="blue-grey--text text--darken-3 text-body-1 text-center px-5">
+          Inquisitive, energetic, and hardworking Computer Science specialist
+          skilled in organization, leadership, communication, and programming
+          logic. Actively pursuing further knowledge and experience of software
+          development. Seeking to put proven skills in designing, developing,
+          and releasing software.
+        </p>
+      </div>
+    </v-sheet>
+
+    <!-- <v-card class="mb-4" flat>
       <v-img :src="require('../assets/DSC_0302.png')" :aspect-ratio="16 / 9">
         <div class="d-flex glass-div justify-center mx-auto mt-1">
           <v-card-text>
@@ -24,14 +59,28 @@
           </v-card-text>
         </div>
       </v-img>
-    </v-card>
+    </v-card> -->
 
-    <v-card flat>
+    <v-sheet color="blue-grey lighten-4" height="90vh">
+      <div class="glass-div mb-4">
+        <p
+          class="
+            blue-grey--text
+            text--darken-1 text-h3
+            font-weight-regular
+            text-center
+            mt-4
+          "
+        >
+          I'm profficient in:
+        </p>
+      </div>
+
       <v-img
         dark
         :src="require('../assets/artwork_home.png')"
         max-height="646"
-        :aspect-ratio="16 / 9"
+        style="border-radius: 10px"
       >
         <div class="d-flex glass-2-div justify-center ma-1">
           <!-- <v-row>
@@ -54,14 +103,14 @@
               v-for="(icon, index) in icons"
               :key="index"
               cols="3"
-              class="d-flex child-flex justify-center"
+              class="d-flex justify-center"
             >
               <v-img :src="icon.icon" max-width="100"></v-img>
             </v-col>
           </v-row>
         </div>
       </v-img>
-    </v-card>
+    </v-sheet>
   </v-container>
 </template>
 
