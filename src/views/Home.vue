@@ -60,42 +60,52 @@
         </div>
       </v-img>
     </v-card> -->
-
-    <v-sheet color="blue-grey lighten-4" height="90vh">
-      <div class="glass-div mb-4">
-        <p
-          class="
-            blue-grey--text
-            text--darken-1 text-h3
-            font-weight-regular
-            text-center
-            mt-4
-          "
-        >
-          I'm profficient in:
-        </p>
-      </div>
-
-      <v-img
-        dark
-        :src="require('../assets/artwork_home.png')"
-        max-height="646"
-        style="border-radius: 10px"
-      >
-        <div class="d-flex glass-2-div justify-center ma-1">
-          <v-row class="ma-2">
-            <v-col
-              v-for="(icon, index) in icons"
-              :key="index"
-              cols="3"
-              class="d-flex justify-center"
-            >
-              <v-img :src="icon.icon" :max-width="width"></v-img>
-            </v-col>
-          </v-row>
+    <v-lazy
+      v-model="isActive"
+      :options="{
+        threshold: 0.5,
+      }"
+      min-height="200"
+      transition="fade-transition"
+    >
+      <v-sheet color="blue-grey lighten-4" height="90vh">
+        <div class="glass-div mb-4">
+          <p
+            class="
+              blue-grey--text
+              text--darken-1 text-h3
+              font-weight-regular
+              text-center
+              mt-4
+            "
+          >
+            I'm profficient in:
+          </p>
         </div>
-      </v-img>
-    </v-sheet>
+
+        <v-img
+          dark
+          :src="require('../assets/artwork_home.png')"
+          max-height="646"
+          style="border-radius: 10px"
+        >
+          <div
+            class="d-flex glass-2-div justify-center ma-1"
+          >
+            <v-row class="ma-2">
+              <v-col
+                v-for="(icon, index) in icons"
+                :key="index"
+                cols="3"
+                class="d-flex justify-center"
+              >
+                <v-img :src="icon.icon" :max-width="width"></v-img>
+              </v-col>
+            </v-row>
+          </div>
+        </v-img>
+      </v-sheet>
+    </v-lazy>
   </v-container>
 </template>
 
@@ -104,6 +114,7 @@ export default {
   name: "Home",
 
   data: () => ({
+    isActive: false,
     icons: [
       {
         icon: "https://img.icons8.com/color/240/000000/html-5--v1.png",

@@ -1,16 +1,20 @@
 <template>
   <v-container fluid>
     <v-card class="pa-8 mx-auto" max-width="65rem">
-      <v-img :src="require('../assets/Resume Jun 2020.png')">
+      <v-img
+        :src="require('../assets/Resume Jun 2020.png')"
+        :lazy-src="require('../assets/Resume Jun 2020.png')"
+        aspect-ratio=".75"
+      >
         <template v-slot:placeholder>
-          <v-skeleton-loader
-            class="mx-auto"
-            width="100%"
-            height="100%"
-            type="image"
-          ></v-skeleton-loader>
-          </template
-      ></v-img>
+          <v-row class="fill-height ma-0" align="center" justify="center">
+            <v-progress-circular
+              indeterminate
+              color="grey lighten-5"
+            ></v-progress-circular>
+          </v-row>
+        </template>
+      </v-img>
 
       <v-divider class="mx-1 my-7"></v-divider>
 
@@ -22,6 +26,7 @@
           depressed
           color="blue-grey darken-2"
           href="/Jackson_Lauder_Resume.pdf"
+          target="_blank"
         >
           <v-icon class="mr-1">mdi-download</v-icon>
           Download
@@ -32,3 +37,17 @@
     </v-card>
   </v-container>
 </template>
+
+<script>
+export default {
+  name: "Resume",
+  data: () => ({
+    isLoaded: false,
+  }),
+  methods: {
+    onImgLoad() {
+      this.isLoaded = true;
+    },
+  },
+};
+</script>
