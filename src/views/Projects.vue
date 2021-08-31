@@ -8,7 +8,9 @@
           class="mx-auto mt-5 pa-2"
           max-width="50rem"
         >
-          <v-card-text class="text-center my-4 mx-1 blue-grey--text text--darken-2">
+          <v-card-text
+            class="text-center my-4 mx-1 blue-grey--text text--darken-2"
+          >
             <h1>{{ project.title }}</h1>
           </v-card-text>
 
@@ -30,9 +32,7 @@
               v-for="(language, i) in project.languages"
               :key="i"
               class="mx-2"
-              style="
-                font-size: 1.15em;
-              "
+              style="font-size: 1.15em"
             >
               {{ language }}
             </span>

@@ -89,9 +89,7 @@
           max-height="646"
           style="border-radius: 10px"
         >
-          <div
-            class="d-flex glass-2-div justify-center ma-1"
-          >
+          <div class="d-flex glass-2-div justify-center ma-1">
             <v-row class="ma-2">
               <v-col
                 v-for="(icon, index) in icons"
