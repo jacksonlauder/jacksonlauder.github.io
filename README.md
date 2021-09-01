@@ -1,5 +1,7 @@
 # jaxium-personal-website
 
+[Color Reference](https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=37474f&secondary.color=BF360C&secondary.text.color=ffffff)
+
 ## Project setup
 
 ```bash
