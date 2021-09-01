@@ -57,7 +57,7 @@
                   v-bind="attrs"
                   v-on="on"
                 >
-                  <v-icon>mdi-open-in-new</v-icon>
+                  <v-icon color="deep-orange darken-4">mdi-open-in-new</v-icon>
                 </v-btn>
               </template>
               <span>External Link</span>
@@ -76,7 +76,7 @@
                   v-bind="attrs"
                   v-on="on"
                 >
-                  <v-icon>mdi-code-json</v-icon>
+                  <v-icon color="deep-orange darken-4">mdi-code-json</v-icon>
                 </v-btn>
               </template>
               <span>Code Repository</span>
