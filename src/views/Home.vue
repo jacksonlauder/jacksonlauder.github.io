@@ -2,10 +2,11 @@
   <v-container fluid>
     <v-sheet color="blue-grey lighten-4" height="90vh" class="d-flex">
       <!-- <v-parallax :src="require('../assets/artwork_home_transparent.svg')"></v-parallax> -->
-      <v-img
-        :src="require('../assets/artwork_home_transparent(1000).svg')"
-        style="border-radius: 10px; position: absolute"
-      ></v-img>
+      <!-- <v-img
+        :src="require('../assets/artwork_home_1000.png')"
+        style="border-radius: 10px"
+        class="align-center"
+      ></v-img> -->
       <div class="glass-div ma-auto">
         <p
           class="
@@ -16,7 +17,7 @@
             mt-4
           "
         >
-          Hey there, I'm
+          Hey, I'm
         </p>
 
         <p
