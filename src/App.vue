@@ -68,9 +68,11 @@
         <v-list-item
           @click="$router.push('/resume')"
           :ripple="false"
-          class="pl-5 mt-5"
+          class="mt-5"
         >
-          <v-list-item-title>Resume</v-list-item-title>
+          <v-list-item-title class="d-flex justify-center">
+            Resume
+          </v-list-item-title>
         </v-list-item>
 
         <v-divider></v-divider>
@@ -78,21 +80,27 @@
         <v-list-item
           @click="$router.push('/projects')"
           :ripple="false"
-          class="pl-5 mt-2"
+          class="mt-2"
         >
-          <v-list-item-title>Projects</v-list-item-title>
+          <v-list-item-title class="d-flex justify-center">
+            Projects
+          </v-list-item-title>
         </v-list-item>
 
         <v-divider></v-divider>
 
-        <v-list-item @click="goToGithub()" :ripple="false" class="pl-5 mt-2">
-          <v-list-item-title><v-icon>mdi-github</v-icon></v-list-item-title>
+        <v-list-item @click="goToGithub()" :ripple="false" class="mt-2">
+          <v-list-item-title class="d-flex justify-center">
+            <v-icon>mdi-github</v-icon>
+          </v-list-item-title>
         </v-list-item>
 
         <v-divider></v-divider>
 
-        <v-list-item @click="goToLinkedIn()" :ripple="false" class="pl-5 mt-2">
-          <v-list-item-title><v-icon>mdi-linkedin</v-icon></v-list-item-title>
+        <v-list-item @click="goToLinkedIn()" :ripple="false" class="mt-2">
+          <v-list-item-title class="d-flex justify-center">
+            <v-icon>mdi-linkedin</v-icon>
+          </v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -121,11 +129,11 @@
             ><v-icon left color="blue-grey lighten-3">mdi-phone</v-icon
             >801-884-3885<v-spacer></v-spacer>
           </v-row>
-          
+
           <v-row align="center" class="my-3 d-md-none">
             <v-spacer></v-spacer>
-            <v-icon left color="blue-grey lighten-3">mdi-map-marker</v-icon
-            >Salt Lake City, Utah<v-spacer></v-spacer>
+            <v-icon left color="blue-grey lighten-3">mdi-map-marker</v-icon>Salt
+            Lake City, Utah<v-spacer></v-spacer>
           </v-row>
         </v-card-text>
 
