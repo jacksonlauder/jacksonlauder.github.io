@@ -2,8 +2,8 @@
   <v-container fluid>
     <v-card class="pa-8 mx-auto" max-width="65rem">
       <v-img
-        :src="require('../assets/Resume Jun 2020.png')"
-        :lazy-src="require('../assets/Resume Jun 2020.png')"
+        :src="require('../assets/Resume_Img.png')"
+        :lazy-src="require('../assets/Resume_Img.png')"
         aspect-ratio=".75"
       >
         <template v-slot:placeholder>
